@@ -1,0 +1,11 @@
+#include <stdio.h>
+ int main(){
+     int a,b;
+     scanf("%d %d",&a,&b);
+     int quo=a/b;
+     printf("%d\n",quo);
+     int rem=a%b;
+     printf("%d",rem);
+     
+     return 0;
+ }
