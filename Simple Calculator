@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    float a,b;
+    printf("Enter two numbers:\n");
+    scanf("%f %f",&a,&b);
+    char function;
+    printf("enter the function:\n");
+    scanf("%s",&function);
+    switch(function){
+        case'+':
+            printf("Addition %f",a+b);
+            break;
+        case'-':
+            printf("Subtraction %f",a-b);
+            break;
+        case'*':
+            printf("Multiplication %f",a*b);
+            break;
+        case'/':
+            printf("Division %f",a/b);
+            break;
+        default:
+            printf("i dont know");
+    }
+    
+}
