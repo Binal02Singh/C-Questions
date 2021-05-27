@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    float a,b,c,d,e,sum,per;
+    printf("Enter your subject 1 marks:\n");
+    scanf("%F",&a);
+    printf("Enter your subject 2 marks:\n");
+    scanf("%F",&b);
+    printf("Enter your subject 3 marks:\n");
+    scanf("%F",&c);
+    printf("Enter your subject 4 marks:\n");
+    scanf("%F",&d);
+    printf("Enter your subject 5 marks:\n");
+    scanf("%F",&e);
+    sum=a+b+c+d+e;
+    per=sum/5;
+    printf("your percentage is %f%%\n",per);
+    if(per<=90 || per>80){
+        printf("Your grade is S\n");
+        
+    }
+    else if(per<=80 || per>70){
+        printf("Your grade is A\n");
+        
+    }
+    else if(per<=70 || per>60){
+        printf("Your grade is B\n");
+        
+    }
+    else if(per<=60){
+        printf("Your grade is C\n");
+        
+    }
+    
+}
