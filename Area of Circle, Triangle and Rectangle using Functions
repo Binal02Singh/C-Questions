@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+
+   int sum=0,choice,base,height,radi,length,breadth;
+   void area_tria()
+   {int area_tria;
+      printf("enter base: \t");
+      scanf("%d",&base);
+    printf("enter height \t");
+    scanf("%d",&height);
+    area_tria = 0.5*base*height;
+    printf("%d",area_tria);
+    }
+    
+   void area_rect()
+   { int area_rect;
+      printf("enter lenth: \t");
+      scanf("%d",&length);
+    printf("enter breadth \t");
+    scanf("%d",&breadth);
+    area_rect = length*breadth;
+    printf("%d",area_rect);
+    }
+    
+   void area_circle()
+   { int area_circle;
+      printf("enter radi: \t");
+      scanf("%d",&radi);
+    
+    area_circle = 3.14*radi*radi;
+    printf("%d",area_circle);
+    }
+   
+int main() {
+    printf("MENU \n 1.Triangle \n 2.Rect \n 3.Circle \n");
+   printf("enter choice \t");
+   scanf("%d",&choice);
+   
+  if (choice==1)
+   area_tria();
+   
+  else if (choice==2)
+  area_rect();
+  else if(choice==3)
+  area_circle();
+    return 0;
+}
