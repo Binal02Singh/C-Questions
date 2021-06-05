@@ -1,0 +1,17 @@
+#include <stdio.h>
+int count=0;
+int digit_counter(int n){
+    if(n!=0){
+        n =n/10;
+        count+=1;
+        digit_counter(n);
+    }
+    return count;
+}
+int main(){
+    int n;
+    printf("Enter a number:\t");
+    scanf("%d",&n);
+    digit_counter(n);
+    printf("The number of digits in the number is : %d\n",count);
+}
